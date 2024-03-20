@@ -1,0 +1,766 @@
+.cover{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+.cover img{
+    width: 100%;
+}
+.intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 60px;
+    font-family: 'Lucida Sans';
+}
+.title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #0086b9;
+    padding: 40px;
+    color: white;
+    border-radius: 70px 0px 70px 0px;
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.illustration{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.points{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    overflow: hidden;
+}
+.points .list{
+    width: 85%;
+    height: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: block;
+    color: white;
+    background: linear-gradient(180deg, #F8BA35 0%, #EB4E84 100%);
+    padding: 25px;
+    border-radius: 10px;
+}
+.points .list li{
+    margin: 8px 0px;
+    font-size: 16px;
+}
+.ask{
+    background: url("/image/ask-bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    height: 620px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.ask-head{
+    margin: auto;
+    font-size: 38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+.ask-video{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.ask-video video{
+    width: 100%;
+    height: 100%;
+}
+.ask-form{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px;
+}
+.ask-form p{
+    width: fit-content;
+    padding: 5px 12px;
+    color: #757575;
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    background: #FFF;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin: 20px;
+}
+.ask-form input{
+    width: 90%;
+    margin: 20px;
+    padding: 5px 12px;
+    color: #555555;
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    background: #dadada83;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+.ask-form button{
+    margin: 0px 20px;
+    border: none;
+    border-radius: 13px;
+    padding: 7px 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: white;
+    background: orange;
+    float: right;
+}
+.services{
+    width: 80%;
+    margin: auto;
+    font-family: 'Lucida Sans';
+    margin-bottom: 60px;
+}
+.serv-head{
+    color: #5888F8;
+    text-align: center;
+    margin: 25px 0px;
+}
+.serv-head p:first-child{
+    font-size: 25px;
+    margin: 25px;
+}
+.serv-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    box-sizing: border-box;
+    flex-basis: 30%;
+    background-color: #0086b9;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.card img{
+    width: 50px;
+}
+.card h3{
+    margin: 20px 0px;
+}
+.card p{
+    margin-bottom: 15px;
+    color: #858796;
+    line-height: 150%;
+}
+.google{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 60px;
+    background: #EEEDEA;
+    border-radius: 10px;
+}
+.google img{
+    width: 50%;
+    margin: 30px auto;
+}
+.img-slider{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    background-color: #2D2D2D;
+}
+.fade{
+    animation: fade;
+    animation-duration: 2s
+}
+@keyframes fade{
+    from{
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.slide{
+    margin: 10px;
+    display: none;
+}
+.slide img{
+    width: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.arrow{
+    width: 80%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22%;
+}
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    background: #00000066;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next {
+    border-radius: 3px 0 0 3px;
+  }
+.help{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+}
+.help-head{
+    display: flex;
+    height: 550px;
+    background-image: url("/image/help.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
+    font-weight: bold;
+    font-family: 'Lucida Sans';
+    color: white;
+    text-shadow: 7px 2px 4px black;
+    letter-spacing: 3px;
+}
+.help-form{
+    width: 100%;
+}
+.help-form form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.help-form form div{
+    display: inherit;
+    width: 80%;
+    margin: 10px auto;
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+}
+.help-form form div:nth-child(5), .help-form form div:last-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.help-form form div input{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    height: 20px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+}
+.help-form form div textarea{
+    font-family: 'Lucida Sans';
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #b6b6b6;
+    border-radius: 5px;
+    height: 80px;
+}
+.help-form form div input[type= submit]{
+    width: 166px;
+    height: 36px;
+    margin: auto;
+    background: #FEB440;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ppc{
+    width: 80%;
+    height: 550px;
+    background: #3A3B45;
+    margin: auto;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ppc-container{
+    width: 50%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    margin: 20px 15%;
+    font-family: 'Lucida Sans';
+}
+.ppc-container p{
+    margin: 20px 0px;
+}
+.ppc-container p:nth-child(1){
+    font-size: 15px;
+}
+.ppc-container p:nth-child(2){
+    font-size: 30px;
+}
+.ppc-container p:nth-child(3){
+    font-size: 18px;
+}
+.ppc-icons{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+    margin: 30px;
+}
+.ppc-icons img{
+    width: 170px;
+}
+.ppc-container button{
+    width: 100px;
+    height: 35px;
+    background: #EB4E84;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.trophy{
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    padding: 20px;
+    align-items: end;
+    justify-content: right;
+}
+.trophy img{
+    width: 300px;
+}
+.globe{
+    box-sizing: border-box;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin: auto;
+    margin-bottom: 60px;
+    padding: 25px;
+    font-family: 'Lucida Sans';
+    letter-spacing: 1px;
+    background: aliceblue;
+    border-radius: 15px;
+}
+.globe section{
+    display: block;
+    text-align: left;
+}
+.globe section h1{
+    color: #5888F8;
+}
+.globe section p{
+    color: #858796;
+}
+.globe section button{
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: #5888F8;
+    padding: 7px 15px;
+    margin-top: 60px;
+    font-size: inherit;
+}
+.globe .globe-image img{
+    width: 100%;
+}
+.agency{
+    width: 100%;
+    background: #F4F4F4;
+    font-family: 'Lucida Sans';
+    padding: 50px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+}
+.agency-head{
+    width: 80%;
+    color: #858796;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.agency-head h1, .client-head h1{
+    color: #E84B8D;
+}
+.agency-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.agency-card{
+    box-sizing: border-box;
+    flex-basis: 30%;
+    color: #858796;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.agency-card i{
+    color: white;
+    background: #FEB440;
+    padding: 3px 5px;
+    border-radius: 7px;
+}
+.client{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;
+    text-align: center;
+    font-family: 'Lucida Sans';
+}
+section{
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.client-logo{
+    flex-basis: 80px;
+}
+.client-logo img{
+    width: 100%;
+}
+footer{
+    color: white;
+    background: #2D2D2D;
+    padding: 30px;
+    font-family: 'Lucida Sans';
+}
+.policy{
+    width: 60%;
+    margin: auto;
+}
+.policy ul{
+    list-style: none;
+    margin: 20px auto;
+    line-height: 150%;
+}
+.copyright{
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 991px) {
+    .cover{
+        margin-bottom: 0px;
+    }
+    .cover img{
+        width: 150%;
+    }
+    .intro, .ask, .services, .google, .help, .ppc, .trophy, .globe, .agency, .client{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .intro{
+        height: 460px;
+    }
+    .title{
+        font-size: 25px;
+        padding: 25px;
+        border-radius: 0px;
+    }
+    .points .list{
+        height: 70%;
+    }
+    .points .list li{
+        font-size: 11px;
+    }
+    .ask-head{
+        font-size: 30px;
+    }
+    .card{
+        flex-basis: 45%;
+    }
+    .img-slider{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .slide img{
+        padding: 15px;
+    }
+    .arrow{
+        width: 90%;
+    }
+    .help-head{
+        background-size: 100% 100%;
+    }
+    .ppc{
+        border-radius: 0px;
+    }
+    .ppc-container{
+        margin: 20px 25%;
+    }
+    .ppc-container p:nth-child(2){
+        font-size: 25px;
+    }
+    .agency{
+        padding: 35px;
+    }
+    .agency-head, .agency-container{
+        width: 90%;
+    }
+    .agency-card{
+        flex-basis: 47%;
+        margin-bottom: 15px;
+    }
+    .client-logo{
+        margin: 20px 60px;
+        flex-basis: 90px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .illustration{
+        display: flex;
+    }
+    .illustration img{
+        width: 70%;
+    }
+    .ask-head{
+        text-align: center;
+        margin: 20px;
+    }
+    .ask-form{
+        padding: 5px 0px;
+    }
+    .services{
+        width: 95%;
+        margin-bottom: 0px;
+    }
+    .serv-head p:first-child {
+        font-size: 22px;
+        margin: 25px;
+    }
+    .card{
+        flex-basis: 45%;
+        text-align: center;
+    }
+    .card img{
+        width: 50px;
+        display: flex;
+        margin: auto;
+    }
+    .google{
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 10px;
+    }
+    .slide img{
+        padding: 8px;
+    }
+    .help{
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .help-head{
+        text-align: center;
+        font-size: 58px;
+    }
+    .help-form form{
+        display: flex;
+        flex-direction: column;
+    }
+    .help-form form div{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ppc{
+        height: 700px;
+        border-radius: 0px;
+        margin-bottom: 0px;
+    }
+    .ppc-container p:nth-child(2){
+        font-size: 23px;
+    }
+    .trophy{
+        height: 700px;
+    }
+    .globe{
+        display: block;
+        margin-bottom: 0px;
+        border-radius: 0px;
+    }
+    .globe section{
+        text-align: center;
+        margin: 0px;
+    }
+    .globe .globe-image{
+        display: flex;
+        justify-content: end;
+    }
+    .globe .globe-image img{
+        padding: 15px;
+        width: 60%;
+    }
+    .agency{
+        margin-bottom: 0px;
+        padding: 30px;
+    }
+    .agency-head, .agency-container{
+        width: 90%;
+    }
+    .agency-card{
+        flex-basis: 100%;
+        margin: 15px auto;
+    }
+    .client-logo{
+        flex-basis: 65px;
+        margin: 20px 45px;
+    }
+
+}
+
+@media (max-width: 480px){
+    .cover img{
+        height: 456px;
+        width: 230%;
+    }
+    .intro, .ask{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .title{
+        font-size: 17px;
+        text-align: center;
+    }
+    .points .list{
+        margin-top: 0px;
+        padding: 13px;
+        border-radius: 0px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .ask-head{
+        font-size: 22px;
+    }
+    .ask-form p{
+        padding: 5px 10px;
+        font-size: 15px;
+        margin: 11px;
+    }
+    .ask-form button{
+        font-size: 15px;
+        padding: 5px 15px;
+    }
+    .ask-form input {
+        width: 80%;
+        margin: 20px;
+        padding: 5px 10px;
+        font-size: 15px;
+    }
+    .card{
+        flex-basis: 100%;
+        margin: 6px 0px;
+        padding: 8px;
+    }
+    .card h3{
+        margin: 10px 0px;
+    }
+    .img-slider{
+        margin: 10px auto;
+    }
+    .slide img{
+        padding: 0px;
+    }
+    .prev, .next {
+        padding: 10px;
+        color: white;
+        font-size: 11px;
+    }
+    .help{
+        display: block;
+    }
+    .help-head{
+        font-size: 33px;
+        height: 228px;
+    }
+    .ppc-container{
+        margin: 20px 5%;
+        width: 90%;
+    }
+    .ppc-container p:nth-child(1){
+        font-size: 12px;
+    }
+    .ppc-container p:nth-child(2){
+        font-size: 18px;
+    }
+    .ppc-container p:nth-child(3){
+        font-size: 14px;
+    }
+    .trophy img{
+        width: 240px;
+    }
+    .agency{
+        padding: 15px;
+    }
+    .agency-head{
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .agency-head h1{
+        font-size: 17px;
+    }
+    .agency-head p{
+        font-size: 12px;
+    }
+    .agency-card{
+        margin: 5px auto;
+    }
+    .client{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .client-head h1{
+        font-size: 20px;
+    }
+    .client section{
+        margin: 30px auto;
+    }
+    .client-logo{
+        flex-basis: 40px;
+        margin: 15px 40px;
+    }
+    .policy ul{
+        font-size: small;
+        margin: 10px auto;
+    }
+    .copyright{
+        font-size: 10px;
+        margin-top: 50px;
+    }
+}
